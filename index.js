@@ -1,6 +1,7 @@
 const button = document.getElementById("button");
+const img = document.getElementById("img");
 
-button.addEventListener('click', function(event) {
+img.addEventListener('click', function(event) {
     fetch('https://shelly-52-eu.shelly.cloud/device/relay/control', {
         method: 'POST',
         body: new URLSearchParams({
@@ -11,10 +12,15 @@ button.addEventListener('click', function(event) {
         })
     });
 
-    button.style.backgroundColor = "green";
+    // button.style.backgroundColor = "green";
+    img.setAttribute("src", "on.png");
+
+
 
     setTimeout(() => {
-        button.style.backgroundColor = "red";
+        // button.style.backgroundColor = "red";
+        img.setAttribute("src", "off.png");
+
       }, "3000")
 
 });

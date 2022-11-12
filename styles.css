@@ -6,6 +6,10 @@ body {
     align-items: center;
   }
 
+  img {
+    cursor: pointer;
+  }
+
   div {
     background-color: red;
     padding-top: 50px;
