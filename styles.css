@@ -1,0 +1,22 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    background-color: red;
+    padding-top: 50px;
+    height: 75px;
+    width: 125px;
+    border: solid 1px black;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  div:hover {
+    background-color: #D22B2B;
+  }
