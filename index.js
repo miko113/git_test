@@ -1,4 +1,3 @@
-const button = document.getElementById("button");
 const img = document.getElementById("img");
 
 img.addEventListener('click', function(event) {
@@ -12,17 +11,11 @@ img.addEventListener('click', function(event) {
         })
     });
 
-    // button.style.backgroundColor = "green";
     img.setAttribute("src", "on.png");
 
-
-
     setTimeout(() => {
-        // button.style.backgroundColor = "red";
         img.setAttribute("src", "off.png");
-
       }, "3000")
-
 });
 
 
