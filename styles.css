@@ -6,6 +6,6 @@ body {
     align-items: center;
   }
 
-  img {
+  #bulb {
     cursor: pointer;
   }

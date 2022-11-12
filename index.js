@@ -1,6 +1,6 @@
-const img = document.getElementById("img");
+const bulb = document.getElementById("bulb");
 
-img.addEventListener('click', function(event) {
+bulb.addEventListener('click', function(event) {
     fetch('https://shelly-52-eu.shelly.cloud/device/relay/control', {
         method: 'POST',
         body: new URLSearchParams({
@@ -11,10 +11,10 @@ img.addEventListener('click', function(event) {
         })
     });
 
-    img.setAttribute("src", "on.png");
+    bulb.setAttribute("src", "on.png");
 
     setTimeout(() => {
-        img.setAttribute("src", "off.png");
+        bulb.setAttribute("src", "off.png");
       }, "3000")
 });
 
